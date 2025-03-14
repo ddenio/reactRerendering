@@ -3,8 +3,14 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 
-const App = (props) => {
-  const {counter} = props
+// const App = (props) => {
+//   const {counter} = props
+//   return (
+//     <div>{counter}</div>
+//   )
+// }
+
+const App = ({counter}) => {
   return (
     <div>{counter}</div>
   )
