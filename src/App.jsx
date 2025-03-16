@@ -1,16 +1,13 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react'
 
-// const App = (props) => {
-//   const {counter} = props
-//   return (
-//     <div>{counter}</div>
-//   )
-// }
+const App = () => {
+  const [ counter, setCounter ] = useState(0)
 
-const App = ({counter}) => {
+  setTimeout(
+    () => setCounter(counter + 1),
+    1000
+  )
+
   return (
     <div>{counter}</div>
   )
